@@ -16,6 +16,10 @@ public class RandomNameGenerator {
     public RandomNameGenerator(int seed) {
         this.pos = seed;
     }
+	
+	public int getCurrentPos(){
+		return this.pos;
+	}
 
     public RandomNameGenerator() {
         this((int) System.currentTimeMillis());
